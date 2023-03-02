@@ -23,7 +23,7 @@ function App() {
       ) : (
         <p> ON PEUT MANGER</p>
       )}
-      <Reset />
+      <Reset setState={false} />
     </div>
   );
 }
