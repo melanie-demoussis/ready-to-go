@@ -14,9 +14,7 @@ const People = (props) => {
       <button
         className={props.state ? "present" : "absent"}
         onClick={() => {
-          {
-            props.setState(true);
-          }
+          props.setState(true);
         }}
       >
         PRESENT

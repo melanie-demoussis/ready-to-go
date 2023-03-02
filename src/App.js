@@ -11,6 +11,13 @@ function App() {
   const [people2, setPeople2] = useState(false);
   const [people3, setPeople3] = useState(false);
 
+  const handleStates = () => {
+    setState = { setPeople };
+    setState1 = { setPeople1 };
+    setState2 = { setPeople2 };
+    setState3 = { setPeople3 };
+  };
+
   return (
     <div className="App">
       <h1>À TABLE !!!</h1>
@@ -24,12 +31,7 @@ function App() {
       ) : (
         <p> ON PEUT MANGER</p>
       )}
-      <Reset
-        setState={setPeople}
-        setState1={setPeople1}
-        setState2={setPeople2}
-        setState3={setPeople3}
-      />
+      <Reset handleStates={handleStates} />
     </div>
   );
 }
