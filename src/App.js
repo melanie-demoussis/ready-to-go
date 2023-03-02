@@ -23,7 +23,16 @@ function App() {
       ) : (
         <p> ON PEUT MANGER</p>
       )}
-      <Reset setState={false} />
+      <Reset
+        setState={setPeople}
+        state={people}
+        setState={setPeople1}
+        state={people1}
+        setState={setPeople2}
+        state={people2}
+        setState={setPeople3}
+        state={people3}
+      />
     </div>
   );
 }
