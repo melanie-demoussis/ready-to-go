@@ -4,9 +4,7 @@ const People = (props) => {
       <button
         className={props.state ? "absent" : "present"}
         onClick={() => {
-          {
-            props.setState(false);
-          }
+          props.setState(false);
         }}
       >
         ABSENT

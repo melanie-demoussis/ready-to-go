@@ -2,11 +2,12 @@ const Reset = (props) => {
   return (
     <div>
       <button
-        onClick={() => {
-          props.setState(false);
-          props.setState1(false);
-          props.setState2(false);
-          props.setState3(false);
+        onClick={(handleStates) => {
+          props.handleStates();
+          // props.setState(false);
+          // props.setState1(false);
+          // props.setState2(false);
+          // props.setState3(false);
         }}
       >
         PROCHAIN REPAS

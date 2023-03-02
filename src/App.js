@@ -12,10 +12,14 @@ function App() {
   const [people3, setPeople3] = useState(false);
 
   const handleStates = () => {
-    setState = { setPeople };
-    setState1 = { setPeople1 };
-    setState2 = { setPeople2 };
-    setState3 = { setPeople3 };
+    setPeople(false);
+    setPeople1(false);
+    setPeople2(false);
+    setPeople3(false);
+    // setState = { setPeople };
+    // setState1 = { setPeople1 };
+    // setState2 = { setPeople2 };
+    // setState3 = { setPeople3 };
   };
 
   return (
