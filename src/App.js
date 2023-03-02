@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+
+import { useState } from "react";
+
+import People from "./components/People";
+import Reset from "./components/Reset";
 
 function App() {
+  const [people, setPeople] = useState(false);
+  const [people1, setPeople1] = useState(false);
+  const [people2, setPeople2] = useState(false);
+  const [people3, setPeople3] = useState(false);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>À TABLE !!!</h1>
+
+      <People setState={setPeople} state={people} />
+      <People setState={setPeople1} state={people1} />
+      <People setState={setPeople2} state={people2} />
+      <People setState={setPeople3} state={people3} />
+      {!people || !people1 || !people2 || !people3 ? (
+        <p>ON ATTEND, TOUT LE MONDE N'EST PAS ARRIVÉ</p>
+      ) : (
+        <p> ON PEUT MANGER</p>
+      )}
+      <Reset />
     </div>
   );
 }
