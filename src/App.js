@@ -10,6 +10,7 @@ function App() {
   const [people1, setPeople1] = useState(false);
   const [people2, setPeople2] = useState(false);
   const [people3, setPeople3] = useState(false);
+
   return (
     <div className="App">
       <h1>À TABLE !!!</h1>
@@ -25,13 +26,9 @@ function App() {
       )}
       <Reset
         setState={setPeople}
-        state={people}
-        setState={setPeople1}
-        state={people1}
-        setState={setPeople2}
-        state={people2}
-        setState={setPeople3}
-        state={people3}
+        setState1={setPeople1}
+        setState2={setPeople2}
+        setState3={setPeople3}
       />
     </div>
   );

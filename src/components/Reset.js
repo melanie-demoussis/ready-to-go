@@ -5,6 +5,9 @@ const Reset = (props) => {
         onClick={() => {
           {
             props.setState(false);
+            props.setState1(false);
+            props.setState2(false);
+            props.setState3(false);
           }
         }}
       >
